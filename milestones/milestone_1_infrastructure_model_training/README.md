@@ -1,23 +1,26 @@
-📌 Milestone 1: Project infrastructure, Installing essential tools required for project and Trained model from scratch.
+# 📌 Milestone 1: Project Infrastructure & Neural Network from Scratch
 
-📖 Overview
+## 📖 Overview
 
-This milestone focuses on setting up the project infrastructure, installing essential tools, and implementing a Deep Neural Network from scratch using NumPy.
-The model is designed for classification tasks, with a primary focus on MNIST digit recognition. No high-level deep learning frameworks (TensorFlow/PyTorch) are used, ensuring a strong understanding of core neural network concepts.
+This milestone focuses on setting up the project infrastructure, installing essential tools, and implementing a **Deep Neural Network from scratch using NumPy**.  
+The model is designed for **classification tasks**, with a primary focus on **MNIST digit recognition**.
 
-🛠️ Tools & Technologies
+No high-level deep learning frameworks (TensorFlow / PyTorch) are used, ensuring a strong understanding of **core neural network concepts** such as forward propagation, backpropagation, and gradient descent.
 
-Python
+---
 
-NumPy – Numerical computation
+## 🛠️ Tools & Technologies
 
-Pillow (PIL) – Image preprocessing
+- Python  
+- NumPy – Numerical computation  
+- Pillow (PIL) – Image preprocessing  
+- Matplotlib – Training visualization  
 
-Matplotlib – Training visualization
+---
 
-🧠 DeepNeuralNetwork Architecture
+## 🧠 Deep Neural Network Architecture
 
-The DeepNeuralNetwork class implements a 4-layer feedforward neural network:
+The `DeepNeuralNetwork` class implements a **4-layer feedforward neural network**:
 
 Input Layer (784)
 ↓
@@ -27,113 +30,110 @@ Hidden Layer 2 (64 neurons)
 ↓
 Output Layer (10 classes)
 
-Key Parameters
 
-sizes: Defines neurons per layer (e.g., [784, 128, 64, 10])
+### 🔑 Key Parameters
 
-epochs: Number of full training passes
+- `sizes` – Defines neurons per layer (e.g., `[784, 128, 64, 10]`)
+- `epochs` – Number of full training passes
+- `learning_rate` – Controls weight update step size
 
-learning rate: Controls weight update step size
+Weights are initialized using **scaled random normal initialization** to reduce exploding and vanishing gradients.
 
-Weights are initialized using scaled random normal initialization to reduce exploding/vanishing gradients.
+---
 
-🔁 Core Components
-Activation Functions
+## 🔁 Core Components
 
-Sigmoid
-Used in hidden layers; maps values between 0 and 1.
-Includes derivative computation for backpropagation.
+### ⚙️ Activation Functions
 
-Softmax
-Used in the output layer to convert scores into probability distributions.
+**Sigmoid**
+- Used in hidden layers
+- Maps values between 0 and 1
+- Includes derivative computation for backpropagation
 
-Loss Function
+**Softmax**
+- Used in the output layer
+- Converts raw scores into probability distributions
 
-Binary Cross-Entropy Loss
-Computes prediction error and supports gradient calculation.
+---
 
-🔄 Forward & Backward Propagation
-Forward Pass
+### 📉 Loss Function
 
-Computes weighted sums and activations layer by layer
+**Binary Cross-Entropy Loss**
+- Computes prediction error
+- Supports gradient calculation for backpropagation
 
-Stores intermediate values for backpropagation
+---
 
-Backward Pass
+## 🔄 Forward & Backward Propagation
 
-Implements backpropagation to compute gradients
+### ▶️ Forward Pass
+- Computes weighted sums and activations layer by layer
+- Stores intermediate values for backpropagation
 
-Uses chain rule with activation and loss derivatives
+### ◀️ Backward Pass
+- Implements backpropagation to compute gradients
+- Uses the chain rule with activation and loss derivatives
 
-Parameter Update
-
-Uses Stochastic Gradient Descent (SGD)
-
-Updates weights using:
-
+### 🔧 Parameter Update
+- Uses **Stochastic Gradient Descent (SGD)**
+- Weight update rule:
 W = W - learning_rate × gradient
+---
 
-📊 Training & Evaluation
+## 📊 Training & Evaluation
 
-The train() method handles epoch-wise training
+- The `train()` method handles epoch-wise training
+- Computes training and validation accuracy & loss
+- Metrics are stored and plotted to visualize learning trends
 
-Computes training and validation accuracy & loss
+---
 
-Metrics are stored and plotted to visualize learning trends
+## 🖼️ Image Preprocessing
 
-🖼️ Image Preprocessing
+The `preprocess_image()` function performs the following steps:
 
-The preprocess_image() function:
+- Loads image using Pillow
+- Converts to grayscale
+- Resizes to 28 × 28
+- Normalizes pixel values
+- Flattens into a 784-length vector
 
-Loads image using Pillow
+---
 
-Converts to grayscale
+## 🔍 Digit Prediction
 
-Resizes to 28 × 28
+The `predict_digit()` function:
 
-Normalizes pixel values
+- Reshapes image input into column format
+- Performs a forward pass
+- Uses `argmax` to predict the digit (0–9)
 
-Flattens into a 784-length vector
+---
 
-🔍 Digit Prediction
+## 📈 Experimental Observations (ReLU Activation)
 
-The predict_digit() function:
+### ⚙️ Configuration
 
-Reshapes image input into column format
+- Learning Rate: 0.01
+- Epochs: 100
 
-Performs a forward pass
+### 📊 Results
 
-Uses argmax to predict the digit (0–9)
+- Training Accuracy: 99.90%
+- Validation Accuracy: 97.45%
+- Training Loss: 0.0117
+- Validation Loss: 0.0825
 
-📈 Experimental Observations (ReLU Activation)
+### 🧪 Analysis
 
-Configuration
+ReLU activation significantly outperforms sigmoid in convergence speed and validation accuracy.  
+A small train–validation gap indicates mild overfitting, but overall performance is strong, making **ReLU the most effective activation** tested for this architecture.
 
-Learning Rate: 0.01
+---
 
-Epochs: 100
+## ✅ Milestone Outcome
 
-Results
-
-Training Accuracy: 99.90%
-
-Validation Accuracy: 97.45%
-
-Training Loss: 0.0117
-
-Validation Loss: 0.0825
-
-Analysis
-
-ReLU activation significantly outperforms sigmoid in convergence speed and validation accuracy.
-A small train–validation gap indicates mild overfitting, but overall performance is strong, making ReLU the most effective activation tested for this architecture.
-
-✅ Milestone Outcome
-
-Neural network successfully implemented from scratch
-
-End-to-end training and inference pipeline completed
-
-Strong validation performance achieved
-
-Solid foundation established for future milestones
+- Neural network successfully implemented from scratch
+- End-to-end training and inference pipeline completed
+- Strong validation performance achieved
+- Solid foundation established for future milestones
