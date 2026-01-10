@@ -1,184 +1,159 @@
-Milestone 2: Webscrapping and data aggregation
-This module focuses on two core data engineering and NLP tasks:
+# 📌 Milestone 2: Web Scraping & Data Aggregation
 
-Question Answering (QA) using Transformer-based NLP models
+This module focuses on two core **data engineering and NLP tasks**:
 
-Web Scraping and Data Aggregation from both dynamic and structured websites
+- **Question Answering (QA)** using Transformer-based NLP models  
+- **Web Scraping and Data Aggregation** from both dynamic and structured websites  
 
-The goal is to analyze QA model performance under varying question–context scenarios and to implement robust web scraping pipelines using industry-standard tools.
+The goal is to analyze **QA model performance under varying question–context scenarios** and to implement **robust web scraping pipelines** using industry-standard tools.
 
-🎯 Objectives
+---
 
-🔍 Evaluate transformer-based extractive Question Answering models
+## 🎯 Objectives
 
-🌐 Scrape dynamic JavaScript-rendered websites using Playwright
+- 🔍 Evaluate transformer-based extractive Question Answering models  
+- 🌐 Scrape dynamic JavaScript-rendered websites using Playwright  
+- 🕷 Crawl structured paginated websites using Scrapy  
+- 📁 Store extracted data in CSV and JSON formats  
+- ⚙ Address real-world environment challenges in Google Colab  
 
-🕷 Crawl structured paginated websites using Scrapy
+---
 
-📁 Store extracted data in CSV and JSON formats
+## 🛠 Tools & Technologies Used
 
-⚙ Address real-world environment challenges in Google Colab
+### 🔠 Programming & Environment
 
-🛠 Tools & Technologies Used
-🔠 Programming & Environment
+- Python 3.x  
+- Google Colab (Linux)  
 
-Python 3.x
+### 🧠 NLP & Machine Learning
 
-Google Colab (Linux)
+- 🤗 Hugging Face Transformers  
+  - `deepset/roberta-base-squad2`  
+  - `deepset/tinyroberta-squad2`  
 
-🧠 NLP & Machine Learning
+### 🌐 Web Scraping
 
-🤗 Hugging Face Transformers
+- 🎭 Playwright – Dynamic & AJAX-rendered websites  
+- 🕷 Scrapy – Structured crawling and pagination  
 
-deepset/roberta-base-squad2
+### 📦 Libraries & Dependencies
 
-deepset/tinyroberta-squad2
+- asyncio, nest_asyncio  
+- json, csv, pathlib  
+- os, sys, subprocess, tempfile, site  
+- Pandas – Data handling & visualization  
 
-🌐 Web Scraping
+---
 
-🎭 Playwright (Dynamic & AJAX pages)
+## 🧠 NLP Question Answering Module
 
-🕷 Scrapy (Structured crawling)
+### 📌 Description
 
-📦 Libraries & Dependencies
+- Uses pre-trained **RoBERTa models** fine-tuned on **SQuAD 2.0**
+- Performs **extractive Question Answering** by identifying answer spans within a given context
 
-asyncio, nest_asyncio
+### ⚙ Implementation Highlights
 
-json, csv, pathlib
+- Uses `pipeline("question-answering")` from Hugging Face
+- **Inputs:** Question + Context  
+- **Outputs:** Predicted Answer + Confidence Score  
 
-os, sys, subprocess, tempfile, site
+### 📈 Key Observations
 
-Pandas (Data handling & visualization)
+- ✅ High confidence for direct, fact-based questions  
+- ⚠ Lower confidence for indirect or inference-based questions  
+- 🚫 Correctly returns *no answer* for unrelated questions  
+- ⚡ TinyRoBERTa performs efficiently for straightforward queries  
 
-🧠 NLP Question Answering Module
-📌 Description
+---
 
-Uses pre-trained RoBERTa models fine-tuned on SQuAD 2.0
+## 🌐 Web Scraping Module
 
-Performs extractive QA by identifying answer spans in a given context
+### 🎭 Playwright (Dynamic Content)
 
-⚙ Implementation Highlights
+**Target Website:**
+- Laptops & Tablets – `webscraper.io`
 
-pipeline("question-answering") from Hugging Face
+**Features:**
+- Handles AJAX and JavaScript rendering
+- Supports:
+  - “Load More” buttons
+  - Multi-page pagination
 
-Inputs: Question + Context
+**Data Extracted:**
+- Product title  
+- Price  
+- Rating  
+- Product URL  
+- Image URL  
 
-Outputs: Answer + Confidence Score
+**Output Formats:**
+- CSV  
+- JSON  
 
-📈 Key Observations
+---
 
-✅ High confidence for direct questions
+### 🕷 Scrapy (Structured Crawling)
 
-⚠ Low confidence for indirect or inference-based questions
+**Target Website:**
+- 📚 `books.toscrape.com`
 
-🚫 Correctly returns no answer for unrelated questions
+**Features:**
+- Recursive pagination handling  
+- CSS selector-based extraction  
+- Textual → numeric rating conversion  
+- Absolute URL normalization  
 
-⚡ TinyRoBERTa performs efficiently for straightforward queries
+**Google Colab Challenge Solved Using:**
+- Temporary execution scripts  
+- Manual `PYTHONPATH` configuration  
+- `scrapy.cmdline.execute()` via subprocess  
 
-🌐 Web Scraping Module
-🎭 Playwright (Dynamic Content)
+---
 
-Targets:
+## 📊 Data Preprocessing
 
-Laptops & Tablets – webscraper.io
+- ✂ Whitespace trimming  
+- 🔢 Rating standardization  
+- 🔗 Relative → absolute URL conversion  
+- 📄 Direct serialization to CSV & JSON  
 
-Features:
+⚠ No advanced normalization or currency conversion was applied to preserve raw extracted values.
 
-Handles AJAX & JavaScript rendering
+---
 
-Supports:
+## 📈 Model Evaluation
 
-“Load More” buttons
+### 🧠 QA Model Evaluation
 
-Multi-page pagination
+- Confidence score used as reliability indicator  
+- Performs best when context relevance is high  
+- Robust handling of unanswerable queries  
 
-Data Extracted:
-
-Product Title
-
-Price
-
-Rating
-
-Product URL
-
-Image URL
-
-Output Formats: CSV & JSON
-
-🕷 Scrapy (Structured Crawling)
-
-Target Website:
-
-📚 books.toscrape.com
-
-Features:
-
-Recursive pagination
-
-CSS selector-based extraction
-
-Textual → numeric rating conversion
-
-Absolute URL normalization
-
-Colab Challenge Solved Using:
-
-Temporary execution script
-
-Manual PYTHONPATH setup
-
-scrapy.cmdline.execute() via subprocess
-
-📊 Data Preprocessing
-
-✂ Whitespace trimming
-
-🔢 Rating standardization
-
-🔗 Relative → Absolute URL conversion
-
-📄 Direct serialization to CSV & JSON
-
-No advanced normalization or currency conversion was applied to preserve raw extracted values.
-
-📈 Model Evaluation
-🧠 QA Model
-
-Confidence score used as reliability indicator
-
-Performs best with high context relevance
-
-Robust handling of unanswerable queries
-
-🌐 Web Scraping
+### 🌐 Web Scraping Validation
 
 Validated through:
+- Product count verification  
+- Pandas DataFrame inspection  
+- CSV & JSON output integrity checks  
 
-Product count verification
+---
 
-Pandas DataFrame inspection
+## 🏁 Conclusion
 
-CSV & JSON output integrity
+This milestone successfully demonstrates:
 
-🏁 Conclusion
+- ✅ Practical application of Transformer-based QA models  
+- ✅ Efficient scraping of both dynamic and static websites  
+- ✅ Proper tool selection based on website architecture  
+- ✅ Real-world debugging in cloud-based environments  
 
-This project successfully demonstrates:
+---
 
-✅ Practical application of Transformer-based QA models
+## 🚀 Future Enhancements
 
-✅ Efficient scraping of dynamic and static websites
-
-✅ Proper tool selection based on website architecture
-
-✅ Real-world debugging in cloud-based environments
-
-🚀 Future Enhancements
-
-📊 Add Exact Match & F1-score evaluation for QA
-
-💱 Normalize prices and textual attributes
-
-🛡 Handle CAPTCHAs and rate limiting
-
-🔄 Integrate scraped data directly into QA pipelines
+- 📊 Add Exact Match & F1-score evaluation for QA  
+- 💱 Normalize prices and textual attributes  
+- 🛡 Handle CAPTCHAs and rate limiting  
+- 🔄 Integrate scraped data directly into QA pipelines  
