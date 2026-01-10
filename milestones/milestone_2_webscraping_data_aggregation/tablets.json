@@ -1,0 +1,149 @@
+[
+  {
+    "title": "Lenovo IdeaTab",
+    "price": "$69.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/10",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Acer Iconia",
+    "price": "$96.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/11",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Asus MeMO Pad",
+    "price": "$102.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/12",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Amazon Kindle",
+    "price": "$103.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/13",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "iPad Mini Reti...",
+    "price": "$537.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/14",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "IdeaTab A3500L",
+    "price": "$88.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/15",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Galaxy Tab",
+    "price": "$251.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/16",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "IdeaTab A3500-...",
+    "price": "$148.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/17",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Galaxy Tab 3",
+    "price": "$97.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/18",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Galaxy Note",
+    "price": "$489.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/19",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "MeMO Pad 7",
+    "price": "$130.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/20",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Galaxy Tab 4",
+    "price": "$233.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/21",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Galaxy Tab 3",
+    "price": "$107.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/22",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Memo Pad HD 7",
+    "price": "$101.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/23",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Galaxy Note 10...",
+    "price": "$587.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/24",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "MeMo PAD FHD 1...",
+    "price": "$320.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/25",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "IdeaTab S5000",
+    "price": "$172.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/26",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Iconia B1-730H...",
+    "price": "$99.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/27",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "IdeaTab A8-50",
+    "price": "$121.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/28",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Galaxy Note",
+    "price": "$399.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/29",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Apple iPad Air",
+    "price": "$603.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/30",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  }
+]
