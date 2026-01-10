@@ -2,7 +2,7 @@
 
 ## 📖 Project Overview
 
-This project implements an **end-to-end intelligent pricing system** that combines **web scraping, machine learning, deep learning, and Large Language Models (LLMs)** to analyze competitor book data and dynamically adjust pricing strategies.
+This project implements an **end-to-end intelligent pricing system** that combines **web scraping, machine learning, deep learning, and Large Language Models (LLMs)** to analyze competitor book data([booksrun](https://booksrun.com/)) and dynamically adjust pricing strategies on our website ([booksScrape](https://books.toscrape.com/)).
 
 The system is developed across **four milestones**, progressing from foundational neural network implementation to **LLM-powered competitor intelligence and pricing decision-making**.
 
@@ -120,4 +120,6 @@ Book prices are dynamically adjusted based on:
 ---
 
 ## 📊 System Architecture (High-Level)
+
+The system follows a **linear, modular pipeline**, where each component enriches the data and feeds into the next stage:
 
