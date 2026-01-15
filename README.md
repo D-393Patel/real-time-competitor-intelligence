@@ -123,3 +123,18 @@ Book prices are dynamically adjusted based on:
 
 The system follows a **linear, modular pipeline**, where each component enriches the data and feeds into the next stage:
 
+---
+
+## 🧠 AI Review & Architecture Diagrams
+
+@coderabbitai  
+Please:
+1. Perform a full repository review
+2. Generate a high-level system architecture diagram
+3. Generate a data flow diagram covering:
+   - Web scraping
+   - Data processing
+   - ML / LLM inference
+   - Pricing decision logic
+4. Use Mermaid diagrams
+5. Focus on milestone-wise pipeline flow
