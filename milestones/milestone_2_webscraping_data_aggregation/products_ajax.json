@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Packard 255 G2",
+    "price": "$416.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/31",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Aspire E1-510",
+    "price": "$306.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/32",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "ThinkPad T540p",
+    "price": "$1178.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/33",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "ProBook",
+    "price": "$739.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/34",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "ThinkPad X240",
+    "price": "$1311.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/35",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  },
+  {
+    "title": "Aspire E1-572G",
+    "price": "$581.99",
+    "rating_stars": 0,
+    "product_url": "/test-sites/e-commerce/static/product/36",
+    "image_url": "/images/test-sites/e-commerce/items/cart2.png"
+  }
+]
