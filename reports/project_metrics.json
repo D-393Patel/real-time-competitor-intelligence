@@ -1,0 +1,22 @@
+{
+  "seller_skus_monitored": 1000,
+  "competitor_listings_loaded": 3000,
+  "equivalent_matches_detected": 3000,
+  "average_matches_per_sku": 3.0,
+  "pricing_actions": {
+    "raise": 222,
+    "lower": 524,
+    "hold": 254
+  },
+  "alerts_generated": 746,
+  "average_expected_margin_pct": 0.2823,
+  "historical_snapshots_replayed": 14,
+  "historical_price_observations": 42000,
+  "marketplace_input_source": "scraped snapshots",
+  "matcher_strategy": "embedding",
+  "marketplaces_covered": [
+    "Amazon Books",
+    "Bookswagon",
+    "Flipkart Books"
+  ]
+}

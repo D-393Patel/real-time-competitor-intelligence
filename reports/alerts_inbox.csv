@@ -1,0 +1,3 @@
+severity,sku,book_title,alert_title,message,recommended_action,recommended_price,expected_margin_pct
+low,BK-DEEP-WORK-PB,Deep Work,Margin expansion opportunity,Market headroom suggests price can be increased without losing competitiveness.,raise,358.00,0.3213
+high,BK-PSY-MONEY-HC,The Psychology of Money,Aggressive competitor pricing,Amazon Books is undercutting by 50.00.,lower,467.74,0.2500
